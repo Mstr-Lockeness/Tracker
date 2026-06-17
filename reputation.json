@@ -8,14 +8,91 @@
         "faction": "Horde",
         "faction_type": "Racial",
         "estimated_timegate": "None",
-        "associated_instances": ["All Classic Dungeons", "Most Burning Crusade Dungeons", "Molten Front"],
-        "experience_method": ["Zone Quests", "Daily Quests", "Item Boost", "Dungeons"],
         "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
-        "reward_types": ["Mounts", "Transmog"],
-        "rewards": ["Black Wolf", "Brown Wolf", "Dire Wolf", "Timber Wolf", "Swift Brown Wolf", "Swift Timber Wolf", "Swift Gray Wolf", "Shroud of Orgrimmar", "Cape of Orgrimmar", "Mantle of Orgrimmar"],
-        "associated_zones": ["Alterac Valley", "Azshara", "Blasted Lands", "Durotar", "Northern Barrens", "Orgrimmar", "Silverpine Forest", "Southern Barrens", "Stonetalon Mountains", "The Lost Isles", "Twilight Highlands", "Ice Crown"],
+        "rewards": [
+            {
+                "reward_name": "Black Wolf",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Brown Wolf",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+
+            }, 
+            {
+                "reward_name": "Dire Wolf",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Timber Wolf",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Swift Brown Wolf",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {   "reward_name": "Swift Timber Wolf",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Swift Gray Wolf",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Shroud of Orgrimmar",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Cape of Orgrimmar",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Mantle of Orgrimmar",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            }
+        ],
         "associated_reputations": [],
-        "experience_descriptions": []
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Championing the faction.",
+                "method_zone": ["All Classic Era Dungeons",  "All Burning Crusade Era Dungeons", "All Wrath of the Lich King Dungeons", "All Cataclysm Dungeons"],
+                "method_description": "Run through any classic or burning crusade era with the appropriate tabard, every kill gives reputation torwards the faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running quests in zones",
+                "method_zone": ["Alterac Valley", "Azshara", "Blasted Lands", "Durotar", "Northern Barrens", "Orgrimmar", "Silverpine Forest", "Southern Barrens", "Stonetalon Mountains", "The Lost Isles", "Twilight Highlands"],
+                "method_description": "Do quests in these zones to get reputation for your factions"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running daily quests",
+                "method_zone": ["Ice Crown"],
+                "method_description": "Run through daily quests in the Argent Tournament to represent your faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Acquire Orgrimmar Writs of Commendation",
+                "method_zone": ["Moltren Front"],
+                "method_description": "While doing daily quests in the Molten Front, you acquire marks you can use to trade for Orgrimmar Writs of Commendation"
+            }
+
+        ]
     },
     {
         "name": "Stormwind",
@@ -26,14 +103,132 @@
         "faction": "Alliance",
         "faction_type": "Racial",
         "estimated_timegate": "None",
-        "associated_instances": ["All Classic Dungeons", "Most Burning Crusade Dungeons", "Molten Front"],
         "experience_method": ["Zone Quests", "Daily Quests", "Item Boost", "Dungeons"],
         "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
-        "reward_types": ["Mounts", "Transmog", "Housing Decor"],
-        "rewards": ["Black Stallion", "Brown Horse", "Chestnut Mare", "Pinto", "Swift Palomino", "Swift White Steed", "Swift Brown Steed", "Stormwind Large Wooden Table", "Stormwind Keg Stand", "Stormwind Gazebo", "Stormwind Trellis and Basin", "Stormwind Peddler's Cart", "Elwynn Fence", "Elwynn Fencepost", "Stormwind Lamppost"],     
+        "rewards": [
+            {
+                "reward_name": "Black Stallion",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Brown Horse",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Chestnut Mare",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Pinto",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Swift Palomino",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Swift White Steed",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Swift Brown Steed",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Stormwind Large Wooden Table",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Honored"
+            }, 
+            {
+                "reward_name": "Stormwind Keg Stand",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Revered"
+            }, 
+            {
+                "reward_name": "Stormwind Gazebo",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Stormwind Trellis and Basin",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Revered"
+            }, 
+            {
+                "reward_name": "Stormwind Peddler's Cart",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Elwynn Fence",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Friendly"
+            }, 
+            {
+                "reward_name": "Elwynn Fencepost",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Friendly"
+            }, 
+            {
+                "reward_name": "Stormwind Lamppost",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Cape of Stormwind",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Mantle of Stormwind",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Shroud of Stormwind",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            }
+        ],     
         "associated_zones": ["Arathi Highlands", "Duskwood", "Dustwallow Marsh", "Elwynn Forest", "Northern Stranglethorn", "Redridge Mountains", "Southern Barrens", "Stonetalon Mountains", "Stormwind City", "Twilight Highlands", "Western Plaguelands", "Westfall", "Ice Crown"],   
         "associated_reputations": [],
-        "experience_descriptions": []
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Championing the faction.",
+                "method_zone": ["All Classic Era Dungeons",  "All Burning Crusade Era Dungeons", "All Wrath of the Lich King Dungeons", "All Cataclysm Dungeons"],
+                "method_description": "Run through any classic or burning crusade era with the appropriate tabard, every kill gives reputation torwards the faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running quests in zones",
+                "method_zone": ["Arathi Highlands", "Duskwood", "Dustwallow Marsh", "Elwynn Forest", "Northern Stranglethorn", "Redridge Mountains", "Southern Barrens", "Stonetalon Mountains", "Stormwind City", "Twilight Highlands", "Western Plaguelands", "Westfall"],
+                "method_description": "Do quests in these zones to get reputation for your factions"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running daily quests",
+                "method_zone": ["Ice Crown"],
+                "method_description": "Run through daily quests in the Argent Tournament to represent your faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Acquire Stormwind Writs of Commendation",
+                "method_zone": ["Moltren Front"],
+                "method_description": "While doing daily quests in the Molten Front, you acquire marks you can use to trade for Stormwind Writs of Commendation"
+            }
+        ]
     },
     {
         "name": "Thunder Bluff",
@@ -44,66 +239,2586 @@
         "faction": "Horde",
         "faction_type": "Racial",
         "estimated_timegate": "None",
-        "associated_instances": ["All Classic Dungeons", "Most Burning Crusade Dungeons", "Molten Front"],
         "experience_method": ["Zone Quests", "Daily Quests", "Item Boost", "Dungeons"],
         "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
         "reward_types": ["Mounts", "Transmog"],
-        "rewards": ["Gray Kodo", "Brown Kodo", "White Kodo", "Great White Kodo", "Great Brown Kodo", "Great Gray Kodo", "Mantle of Thunder Bluff", "Cape of Thunder Bluff", "Cape of Thunder Bluff"],  
-        "associated_zones": ["Alterac Valley", "Azshara", "Blasted Lands", "Durotar", "Northern Barrens", "Orgrimmar", "Silverpine Forest", "Southern Barrens", "Stonetalon Mountains", "The Lost Isles", "Twilight Highlands", "Ice Crown"],      
+        "rewards": [
+            {
+                "reward_name": "Gray Kodo",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Brown Kodo",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "White Kodo",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Great White Kodo",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Great Brown Kodo",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Great Gray Kodo",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Mantle of Thunder Bluff",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Cape of Thunder Bluff",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            }, 
+            {
+                "reward_name": "Cape of Thunder Bluff",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            }
+        ],        
         "associated_reputations": [],
-        "experience_descriptions": []
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Championing the faction.",
+                "method_zone": ["All Classic Era Dungeons",  "All Burning Crusade Era Dungeons", "All Wrath of the Lich King Dungeons", "All Cataclysm Dungeons"],
+                "method_description": "Run through any classic or burning crusade era with the appropriate tabard, every kill gives reputation torwards the faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running quests in zones",
+                "method_zone": ["Feralas", "Mulgore", "Southern Barrens", "Thousand Needles"],
+                "method_description": "Do quests in these zones to get reputation for your factions"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running daily quests",
+                "method_zone": ["Ice Crown"],
+                "method_description": "Run through daily quests in the Argent Tournament to represent your faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Acquire Thunder Bluff Writs of Commendation",
+                "method_zone": ["Moltren Front"],
+                "method_description": "While doing daily quests in the Molten Front, you acquire marks you can use to trade for Stormwind Writs of Commendation"
+            }
+        ]
     },
     {
         "name": "Ironforge",
         "expansion": "Classic",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
+        "quartermaster": "Captain Stonehelm",
+        "quartermaster_location": "Ironforge",
+        "image_path": "images/reputations/ironforge.jpg",
         "faction": "Alliance",
         "faction_type": "Racial",
         "estimated_timegate": "None",
-        "associated_instances": ["All Classic Dungeons", "Most Burning Crusade Dungeons", "Molten Front"],
-        "experience_method": ["Zone Quests", "Daily Quests", "Item Boost", "Dungeons"],
         "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
-        "reward_types": [],
+        "rewards": [
+            {
+                "reward_name": "Gray Ram",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Brown Ram",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "White Ram",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great White Ram",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Brown Ram",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Gray Ram",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Ironforge Fence",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Friendly"
+            },
+            {
+                "reward_name": "Ornate Dwarven Wardrobe",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Revered"
+            },
+            {
+                "reward_name": "Ornate Ironforge Bench",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Ironforge Fencepost",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Friendly"
+            },
+            {
+                "reward_name": "Ornate Ironforge Table",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Mantle of Ironforge",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Shroud of Ironforge",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Cape of Ironforge",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            }
+        ],        
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Championing the faction.",
+                "method_zone": ["All Classic Era Dungeons",  "All Burning Crusade Era Dungeons", "All Wrath of the Lich King Dungeons", "All Cataclysm Dungeons"],
+                "method_description": "Run through any classic or burning crusade era with the appropriate tabard, every kill gives reputation torwards the faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running quests in zones",
+                "method_zone": ["Alterac Valley", "Dun Morogh", "Loch Modan", "Southern Barrens", "Wetlands"],
+                "method_description": "Do quests in these zones to get reputation for your factions"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running daily quests",
+                "method_zone": ["Ice Crown"],
+                "method_description": "Run through daily quests in the Argent Tournament to represent your faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Acquire Ironforge Writs of Commendation",
+                "method_zone": ["Moltren Front"],
+                "method_description": "While doing daily quests in the Molten Front, you acquire marks you can use to trade for Ironforge Writs of Commendation"
+            }
+        ]
+    },
+    {
+        "name": "Darkspear Trolls",
+        "expansion": "Classic",
+        "quartermaster": "Champion Uru'zin",
+        "quartermaster_location": "Orgrimmar",
+        "image_path": "images/reputations/darkspear_trolls.jpg",
+        "faction": "Horde",
+        "faction_type": "Racial",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [
+            {
+                "reward_name": "Emerald Raptor",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Turquoise Raptor",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Violet Raptor",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Swift Blue Raptor",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Swift Olive Raptor",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Swift Orange Raptor",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Darkspear Mantle ",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Darkspear Shroud",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Darkspear Cape",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            }
+        ],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Championing the faction.",
+                "method_zone": ["All Classic Era Dungeons",  "All Burning Crusade Era Dungeons", "All Wrath of the Lich King Dungeons", "All Cataclysm Dungeons"],
+                "method_description": "Run through any classic or burning crusade era with the appropriate tabard, every kill gives reputation torwards the faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running quests in zones",
+                "method_zone": ["Durotar", "Echo Isles", "Feralas", "Northern Stranglethorn", "Zangarmarsh"],
+                "method_description": "Do quests in these zones to get reputation for your factions"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running daily quests",
+                "method_zone": ["Ice Crown"],
+                "method_description": "Run through daily quests in the Argent Tournament to represent your faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Acquire Ironforge Writs of Commendation",
+                "method_zone": ["Moltren Front"],
+                "method_description": "While doing daily quests in the Molten Front, you acquire marks you can use to trade for Ironforge Writs of Commendation"
+            }
+        ]
+    },
+    {
+        "name": "Darnassus",
+        "expansion": "Classic",
+        "quartermaster": "Moon Priestess Lasara",
+        "quartermaster_location": "Darnassus",
+        "image_path": "images/reputations/darnassus.jpg",
+        "faction": "Alliance",
+        "faction_type": "Racial",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [
+            {
+                "reward_name": "Striped Nightsaber",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Striped Frostsaber",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Spotted Frostsaber",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Swift Frostsaber",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Swift Mistsaber",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Swift Stormsaber",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Striped Dawnsaber",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Mantle of Darnassus",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Shroud of Darnassus",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Cape of Darnassus",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            }
+        ],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Championing the faction.",
+                "method_zone": ["All Classic Era Dungeons",  "All Burning Crusade Era Dungeons", "All Wrath of the Lich King Dungeons", "All Cataclysm Dungeons"],
+                "method_description": "Run through any classic or burning crusade era with the appropriate tabard, every kill gives reputation torwards the faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running quests in zones",
+                "method_zone": ["Ashenvale", "Darkshore", "Feralas", "Stonetalon Mountains", "Teldrassil", "Thousand Needles"],
+                "method_description": "Do quests in these zones to get reputation for your factions"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running daily quests",
+                "method_zone": ["Ice Crown"],
+                "method_description": "Run through daily quests in the Argent Tournament to represent your faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Acquire Ironforge Writs of Commendation",
+                "method_zone": ["Moltren Front"],
+                "method_description": "While doing daily quests in the Molten Front, you acquire marks you can use to trade for Ironforge Writs of Commendation"
+            }
+        ]
+    },
+    {
+        "name": "Undercity",
+        "expansion": "Classic",
+        "quartermaster": "Captain Donald Adams",
+        "quartermaster_location": "Undercity",
+        "image_path": "images/reputations/undercity.jpg",
+        "faction": "Horde",
+        "faction_type": "Racial",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [
+            {
+                "reward_name": "Red Skeletal Horse",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Blue Skeletal Horse",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Brown Skeletal Horse",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Green Skeletal Horse",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Purple Skeletal Horse",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Black Skeletal Horse",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Ochre Skeletal Horse",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Mantle of Undercity",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Shroud of Undercity",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Cape of Undercity",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            }
+        ],      
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Championing the faction.",
+                "method_zone": ["All Classic Era Dungeons",  "All Burning Crusade Era Dungeons", "All Wrath of the Lich King Dungeons", "All Cataclysm Dungeons"],
+                "method_description": "Run through any classic or burning crusade era with the appropriate tabard, every kill gives reputation torwards the faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running quests in zones",
+                "method_zone": ["Arathi Highlands", "Hillsbrad Foothills", "Ruins of Gilneas", "Silverpine Forest", "The Hinterlands", "Tirisfal Glades", "Western Plaguelands"],
+                "method_description": "Do quests in these zones to get reputation for your factions"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running daily quests",
+                "method_zone": ["Ice Crown"],
+                "method_description": "Run through daily quests in the Argent Tournament to represent your faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Acquire Ironforge Writs of Commendation",
+                "method_zone": ["Moltren Front"],
+                "method_description": "While doing daily quests in the Molten Front, you acquire marks you can use to trade for Ironforge Writs of Commendation"
+            }
+        ]
+    },
+    {
+        "name": "Gnomeregon",
+        "expansion": "Classic",
+        "quartermaster": "Master Tinker Trini",
+        "quartermaster_location": "Ironforge",
+        "image_path": "images/reputations/gnomeregan.jpg",
+        "faction": "Alliance",
+        "faction_type": "Racial",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [
+            {
+                "reward_name": "Red Mechanostrider",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Blue Mechanostrider",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Green Mechanostrider",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Unpainted Mechanostrider",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Swift Green Mechanostrider",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Swift White Mechanostrider",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Swift Yellow Mechanostrider",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Mantle of Gnomeregon",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Shroud of Gnomeregon",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Cape of Gnomeregon",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            }
+        ],      
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Championing the faction.",
+                "method_zone": ["All Classic Era Dungeons",  "All Burning Crusade Era Dungeons", "All Wrath of the Lich King Dungeons", "All Cataclysm Dungeons"],
+                "method_description": "Run through any classic or burning crusade era with the appropriate tabard, every kill gives reputation torwards the faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running quests in zones",
+                "method_zone": ["Blasted Lands", "Dun Morogh", "Loch Modan", "Stonetalon Mountains", "Tanaris", "Thousand Needles"],
+                "method_description": "Do quests in these zones to get reputation for your factions"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running daily quests",
+                "method_zone": ["Ice Crown"],
+                "method_description": "Run through daily quests in the Argent Tournament to represent your faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Acquire Ironforge Writs of Commendation",
+                "method_zone": ["Moltren Front"],
+                "method_description": "While doing daily quests in the Molten Front, you acquire marks you can use to trade for Ironforge Writs of Commendation"
+            }
+        ]
+    },
+    {
+        "name": "Silvermoon City",
+        "expansion": "The Burning Crusade",
+        "quartermaster": "Magistrix Nizara",
+        "quartermaster_location": "Eversong Woods(The Burning Crusade)",
+        "image_path": "images/reputations/silvermoon_city.jpg",
+        "faction": "Horde",
+        "faction_type": "Racial",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [
+            {
+                "reward_name": "Red Hawkstrider",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Blue Hawkstrider",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Black Hawkstrider",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Purple Hawkstrider",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Swift Pink Hawkstrider",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Swift Green Hawkstrider",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Swift Purple Hawkstrider",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Mantle of Silvermoon",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Shroud of Silvermoon",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Cape of Silvermoon",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            }
+        ],    
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Championing the faction.",
+                "method_zone": ["All Classic Era Dungeons",  "All Burning Crusade Era Dungeons", "All Wrath of the Lich King Dungeons", "All Cataclysm Dungeons"],
+                "method_description": "Run through any classic or burning crusade era with the appropriate tabard, every kill gives reputation torwards the faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running quests in zones",
+                "method_zone": ["Blasted Lands", "Desolace", "Eversong Woods", "Ghostlands", "Hellfire Peninsula"],
+                "method_description": "Do quests in these zones to get reputation for your factions"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running daily quests",
+                "method_zone": ["Ice Crown"],
+                "method_description": "Run through daily quests in the Argent Tournament to represent your faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Acquire Ironforge Writs of Commendation",
+                "method_zone": ["Moltren Front"],
+                "method_description": "While doing daily quests in the Molten Front, you acquire marks you can use to trade for Ironforge Writs of Commendation"
+            }
+        ]
+    },
+    {
+        "name": "Exodar",
+        "expansion": "The Burning Crusade",
+        "quartermaster": "Kadu",
+        "quartermaster_location": "The Exodar",
+        "image_path": "images/reputations/exodar.jpg",
+        "faction": "Alliance",
+        "faction_type": "Racial",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [
+            {
+                "reward_name": "Brown Elekk",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Purple Elekk",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Gray Elekk",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Blue Elekk",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Green Elekk",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Purple Elekk",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Mantle of Exodar",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Shroud of Exodar",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Cape of Exodar",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            }
+        ],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Championing the faction.",
+                "method_zone": ["All Classic Era Dungeons",  "All Burning Crusade Era Dungeons", "All Wrath of the Lich King Dungeons", "All Cataclysm Dungeons"],
+                "method_description": "Run through any classic or burning crusade era with the appropriate tabard, every kill gives reputation torwards the faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running quests in zones",
+                "method_zone": ["Azuremyst Isle", "Bloodmyst Isle", "Hellfire Peninsula", "Swamp of Sorrows", "Zangarmarsh"],
+                "method_description": "Do quests in these zones to get reputation for your factions"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running daily quests",
+                "method_zone": ["Ice Crown"],
+                "method_description": "Run through daily quests in the Argent Tournament to represent your faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Acquire Ironforge Writs of Commendation",
+                "method_zone": ["Moltren Front"],
+                "method_description": "While doing daily quests in the Molten Front, you acquire marks you can use to trade for Ironforge Writs of Commendation"
+            }
+        ]
+    },
+    {
+        "name": "Bilgewater Cartel",
+        "expansion": "Cataclysm",
+        "quartermaster": "Frizzo Villamar",
+        "quartermaster_location": "Orgrimmar",
+        "image_path": "images/reputations/bilgewater_cartel.jpg",
+        "faction": "Horde",
+        "faction_type": "Racial",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [
+            {
+                "reward_name": "Goblin Trike",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Gobline Turbo-Trike",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Bilgewater Mantle ",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Bilgewater Shroud",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Bilgewater Cape",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            }
+        ],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Championing the faction.",
+                "method_zone": ["All Classic Era Dungeons",  "All Burning Crusade Era Dungeons", "All Wrath of the Lich King Dungeons", "All Cataclysm Dungeons"],
+                "method_description": "Run through any classic or burning crusade era with the appropriate tabard, every kill gives reputation torwards the faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running quests in zones",
+                "method_zone": ["Azshara", "Felwood", "Kezan", "Tanaris", "The Cape of Stranglethorn", "The Lost Isles", "Thousand Needles", "Twilight Highlands"],
+                "method_description": "Do quests in these zones to get reputation for your factions"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Acquire Bilgewater Writs of Commendation",
+                "method_zone": ["Moltren Front"],
+                "method_description": "While doing daily quests in the Molten Front, you acquire marks you can use to trade for Bilgewater Writs of Commendation"
+            }
+        ]
+    },
+    {
+        "name": "Gilneas",
+        "expansion": "Cataclysm",
+        "quartermaster": "Lord Candren",
+        "quartermaster_location": "Darnassus",
+        "image_path": "images/reputations/gilneas.jpg",
+        "faction": "Alliance",
+        "faction_type": "Racial",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [
+            {
+                "reward_name": "Mountain Horse",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Swift Mountain Horse",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Gilnean Stone Wall",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Gilnean Noble's Trellis",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Revered"
+            },
+            {
+                "reward_name": "Mantle of Gilneas",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Shroud of Gilneas",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Cape of Gilneas",
+                "reward_type": "Transmog",
+                "required_reputation": "Exalted"
+            }
+        ],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Championing the faction.",
+                "method_zone": ["All Classic Era Dungeons",  "All Burning Crusade Era Dungeons", "All Wrath of the Lich King Dungeons", "All Cataclysm Dungeons"],
+                "method_description": "Run through any classic or burning crusade era with the appropriate tabard, every kill gives reputation torwards the faction"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Running quests in zones",
+                "method_zone": ["Duskwood", "Felwood", "Gilneas (Worgen-only)", "Shadowfang Keep"],
+                "method_description": "Do quests in these zones to get reputation for your factions"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Acquire Gilneas Writs of Commendation",
+                "method_zone": ["Moltren Front"],
+                "method_description": "While doing daily quests in the Molten Front, you acquire marks you can use to trade for Gilneas Writs of Commendation"
+            }
+        ]
+    },
+    {
+        "name": "Huojin Pandaren",
+        "expansion": "Mists of Pandaria",
+        "quartermaster": "Disciple Jusi",
+        "quartermaster_location": "Orgrimmar",
+        "image_path": "images/reputations/huojin_pandaren.jpg",
+        "faction": "Horde",
+        "faction_type": "Racial",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [
+            {
+                "reward_name": "Black Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Blue Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Brown Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Green Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Purple Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Red Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Black Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Blue Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Brown Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Green Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Purple Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Red Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }
+        ],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Championing the faction",
+                "method_zone": ["All Classic Era Dungeons",  "All Burning Crusade Era Dungeons", "All Wrath of the Lich King Dungeons", "All Cataclysm Dungeons"],
+                "method_description": "Run through any classic or burning crusade era with the appropriate tabard, every kill gives reputation torwards the faction"
+            }
+        ]
+    },
+    {
+        "name": "Tushui Pandaren",
+        "expansion": "Mists of Pandaria",
+        "quartermaster": "Adherent Hanjun",
+        "quartermaster_location": "Stormwind",
+        "image_path": "images/reputations/tushui_pandaren.jpg",
+        "faction": "Alliance",
+        "faction_type": "Racial",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [
+            {
+                "reward_name": "Black Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Blue Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Brown Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Green Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Purple Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Red Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Black Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Blue Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Brown Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Green Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Purple Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Great Red Dragon Turtle",
+                "reward_type": "Mount",
+                "required_reputation": "Exalted"
+            }
+        ],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Championing the faction",
+                "method_zone": ["All Classic Era Dungeons",  "All Burning Crusade Era Dungeons", "All Wrath of the Lich King Dungeons", "All Cataclysm Dungeons"],
+                "method_description": "Run through any classic or burning crusade era with the appropriate tabard, every kill gives reputation torwards the faction"
+            }
+        ]
+    },
+    {
+        "name": "Dark Talon",
+        "expansion": "Dragonflight",
+        "quartermaster": "Scalecommander Cindrethresh",
+        "quartermaster_location": "Valdrakken",
+        "image_path": "images/reputations/valdrakken_h.jpg",
+        "faction": "Horde",
+        "faction_type": "Racial",
+        "estimated_timegate": "Unknown",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
         "rewards": [],     
-        "associated_zones": ["Arathi Highlands", "Duskwood", "Dustwallow Marsh", "Elwynn Forest", "Northern Stranglethorn", "Redridge Mountains", "Southern Barrens", "Stonetalon Mountains", "Stormwind City", "Twilight Highlands", "Western Plaguelands", "Westfall", "Ice Crown"],   
         "associated_reputations": [],
-        "experience_descriptions": []
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Do quests",
+                "method_zone": ["The Forbidden Reach"],
+                "method_description": "Do any of the available quests in the forbidden reach"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Kill Daily Rares",
+                "method_zone": ["The Forbidden Reach"],
+                "method_description": "Kill any of the daily rares available for a reputation boost"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Find Interesting Items",
+                "method_zone": ["The Forbidden Reach"],
+                "method_description": "While farming rares, they have a chance to drop an 'interesting item' to turn into as a quest"
+            }
+        ]
     },
     {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [],
-        "associated_zones": [],        
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
+        "name": "Obsidian Wardens",
+        "expansion": "Dragonflight",
+        "quartermaster": "Scalecommander Azurathel",
+        "quartermaster_location": "Valdrakken",
+        "image_path": "images/reputations/valdrakken_a.jpg",
+        "faction": "Alliance",
+        "faction_type": "Racial",
+        "estimated_timegate": "Unknown",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
         "rewards": [], 
-        "associated_zones": [],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Do quests",
+                "method_zone": ["The Forbidden Reach"],
+                "method_description": "Do any of the available quests in the forbidden reach"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Kill Daily Rares",
+                "method_zone": ["The Forbidden Reach"],
+                "method_description": "Kill any of the daily rares available for a reputation boost"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Find Interesting Items",
+                "method_zone": ["The Forbidden Reach"],
+                "method_description": "While farming rares, they have a chance to drop an 'interesting item' to turn into as a quest"
+            }
+        ]
+    },
+    {
+        "name": "Warsong Outriders",
+        "expansion": "Classic",
+        "quartermaster": "Kelm Hargunth",
+        "quartermaster_location": "The Barrens",
+        "image_path": "images/reputations/warsong_outriders.jpg",
+        "faction": "Horde",
+        "faction_type": "PvP",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Capture a flag",
+                "method_zone": ["Warsong Gulch"],
+                "method_description": "While in a pvp game, every capture earns 35 reputation on normal days"
+            }
+        ]
+    },
+    {
+        "name": "Silverwing Sentinels",
+        "expansion": "Classic",
+        "quartermaster": "Illiyana Moonblaze",
+        "quartermaster_location": "Ashenvale",
+        "image_path": "images/reputations/silverwing_sentinels.jpg",
+        "faction": "Alliance",
+        "faction_type": "PvP",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Capture a flag",
+                "method_zone": ["Warsong Gulch"],
+                "method_description": "While in a pvp game, every capture of the enemy flag earns reputation "
+            }
+        ]
+    },
+    {
+        "name": "The Defilers",
+        "expansion": "Classic",
+        "quartermaster": "Rutherford Twing",
+        "quartermaster_location": "Arathi Highlands",
+        "image_path": "images/reputations/defilers.jpg",
+        "faction": "Horde",
+        "faction_type": "PvP",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Collect Resources",
+                "method_zone": ["Arathi Basin"],
+                "method_description": "While in a pvp game, every set amount of resources earns reputations"
+            }
+        ]
+    },
+    {
+        "name": "The League of Arathor",
+        "expansion": "Classic",
+        "quartermaster": "Samuel Hawke",
+        "quartermaster_location": "Arathi Highlands",
+        "image_path": "images/reputations/league_of_arathor.jpg",
+        "faction": "Alliance",
+        "faction_type": "PvP",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Collect Resources",
+                "method_zone": ["Arathi Basin"],
+                "method_description": "While in a pvp game, every set amount of resources earns reputations"
+            }
+        ]
+    },
+    {
+        "name": "Frostwolf Clan",
+        "expansion": "Classic",
+        "quartermaster": "Thanthaldis Snowgleam",
+        "quartermaster_location": "Hillsbrad Foothills",
+        "image_path": "images/reputations/frostwolf_clan.jpg",
+        "faction": "Horde",
+        "faction_type": "PvP",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Kill players",
+                "method_zone": ["Alterac Valley"],
+                "method_description": "While in a pvp game, every kill earns you reputation"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Do Repeatable Quests",
+                "method_zone": ["Alterac Valley"],
+                "method_description": "You may get repeatable quests in the faction hub to go into pvp games and turn in for varying amounts of reputation"
+            }
+        ]
+    },
+    {
+        "name": "Stormspike Guard",
+        "expansion": "Classic",
+        "quartermaster": "Thanthaldis Snowgleam",
+        "quartermaster_location": "Hillsbrad Foothills",
+        "image_path": "images/reputations/stormspike_guard.jpg",
+        "faction": "Alliance",
+        "faction_type": "PvP",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Kill players",
+                "method_zone": ["Alterac Valley"],
+                "method_description": "While in a pvp game, every kill earns you reputation"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Do Repeatable Quests",
+                "method_zone": ["Alterac Valley"],
+                "method_description": "You may get repeatable quests in the faction hub to go into pvp games and turn in for varying amounts of reputation"
+            }
+        ]
+    },
+    {
+        "name": "Brawl'gar Arena",
+        "expansion": "Mists of Pandaria",
+        "quartermaster": "Paul North",
+        "quartermaster_location": "Brawl'gar Arena",
+        "image_path": "images/reputations/brawlgar_arena.jpg",
+        "faction": "Horde",
+        "faction_type": "Special",
+        "estimated_timegate": "None",
+        "ranks": ["Rank 1", "Rank 2", "Rank 3", "Rank 4", "Rank 5", "Rank 6", "Rank 7", "Rank 8"],
+        "rewards": [
+            {
+                "reward_name": "Brawler's Barricade",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Rank 2"
+            },
+            {
+                "reward_name": "Clock'em",
+                "reward_type": "Minion",
+                "required_reputation": "Rank 3"
+            },
+            {
+                "reward_name": "Tylarr Gronnden",
+                "reward_type": "Minion",
+                "required_reputation": "Rank 3"
+            },
+            {
+                "reward_name": "Brawler's Guild Tabard",
+                "reward_type": "Transmog",
+                "required_reputation": "Rank 5"
+            },
+            {
+                "reward_name": "Brawler's Guild Punching Bag",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Rank 5"
+            },
+            {
+                "reward_name": "Brawlin' Bruno",
+                "reward_type": "Mount",
+                "required_reputation": "Rank 6"
+            },
+            {
+                "reward_name": "Champion Brawler's Gloves",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Rank 7"
+            },
+            {
+                "reward_name": "Brawler's Razor Claws",
+                "reward_type": "Transmog",
+                "required_reputation": "Rank 8"
+            },
+            {
+                "reward_name": "Ensemble: Brawler's Garb",
+                "reward_type": "Transmog",
+                "required_reputation": "Rank 8"
+            },
+            {
+                "reward_name": "Ballistic Bronco",
+                "reward_type": "Mount",
+                "required_reputation": "Rank 8"
+            }
+        ],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Compete in Fights",
+                "method_zone": ["Brawl'gar Arena"],
+                "method_description": "You may queue for a 1v(whatever) fight in the arena, only one person may fight at a time and the rest form a line. 28 fights are needed in total before maxing out this reputation"
+            }
+        ]
+    },
+    {
+        "name": "Bizmo's Brawlpub",
+        "expansion": "Mists of Pandaria",
+        "quartermaster": "Quackenbush",
+        "quartermaster_location": "Bizmo's Brawlpub",
+        "image_path": "images/reputations/bizmos_brawlpub.jpg",
+        "faction": "Alliance",
+        "faction_type": "Special",
+        "estimated_timegate": "None",
+        "ranks": ["Rank 1", "Rank 2", "Rank 3", "Rank 4", "Rank 5", "Rank 6", "Rank 7", "Rank 8"],
+        "rewards": [
+            {
+                "reward_name": "Brawler's Barricade",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Rank 2"
+            },
+            {
+                "reward_name": "Clock'em",
+                "reward_type": "Minion",
+                "required_reputation": "Rank 3"
+            },
+            {
+                "reward_name": "Tylarr Gronnden",
+                "reward_type": "Minion",
+                "required_reputation": "Rank 3"
+            },
+            {
+                "reward_name": "Brawler's Guild Tabard",
+                "reward_type": "Transmog",
+                "required_reputation": "Rank 5"
+            },
+            {
+                "reward_name": "Brawler's Guild Punching Bag",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Rank 5"
+            },
+            {
+                "reward_name": "Brawlin' Bruno",
+                "reward_type": "Mount",
+                "required_reputation": "Rank 6"
+            },
+            {
+                "reward_name": "Champion Brawler's Gloves",
+                "reward_type": "Housing Decor",
+                "required_reputation": "Rank 7"
+            },
+            {
+                "reward_name": "Brawler's Razor Claws",
+                "reward_type": "Transmog",
+                "required_reputation": "Rank 8"
+            },
+            {
+                "reward_name": "Ensemble: Brawler's Garb",
+                "reward_type": "Transmog",
+                "required_reputation": "Rank 8"
+            },
+            {
+                "reward_name": "Ballistic Bronco",
+                "reward_type": "Mount",
+                "required_reputation": "Rank 8"
+            }
+        ],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Compete in Fights",
+                "method_zone": ["Bizmo's Brawlpub"],
+                "method_description": "You may queue for a 1v(whatever) fight in the arena, only one person may fight at a time and the rest form a line. 28 fights are needed in total before maxing out this reputation"
+            }
+        ]
+    },
+    {
+        "name": "Argent Dawn",
+        "expansion": "Classic",
+        "quartermaster": "Quartermaster Miranda Breechlock",
+        "quartermaster_location": "Eastern Plaguelands",
+        "image_path": "images/reputations/argent_dawn.jpg",
+        "faction": "Universal",
+        "faction_type": "Questing",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [
+            {
+                "reward_name": "Formula: Enchant Bracer - Argent Versatility",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Pattern: Dawn Treaders",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Pattern: Argent Shoulders",
+                "reward_type": "Recipe",
+                "required_reputation": "Revered"
+            },
+            {
+                "reward_name": "Hallowed Brazier",
+                "reward_type": "Quest Item",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Pattern: Golden Mantle of the Dawn",
+                "reward_type": "Recipe",
+                "required_reputation": "Revered"
+            },
+            {
+                "reward_name": "Pattern: Argent Boots",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Recipe: Powerful Anti-Venom",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Plans: Gloves of the Dawn",
+                "reward_type": "Recipe",
+                "required_reputation": "Revered"
+            },
+            {
+                "reward_name": "Plans: Girdle of the Dawn",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Recipe: Transmute Air to Fire",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Formula: Enchant Bracer - Healing Power",
+                "reward_type": "Recipe",
+                "required_reputation": "Revered"
+            }
+        ],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Revered",
+                "method_name": "Follow the Questline",
+                "method_zone": ["Eastern Plaguelands"],
+                "method_description": "Follow the quest chain in the Eastern Plaguelands, starting at Fiona's caravan, all the way until you complete the quest 'Argent Call: The Trial if the Crypt', this quests will get you to revered"
+            },
+            {
+                "minimum_reputation": "Revered",
+                "maximum_reputation": "Exalted",
+                "method_name": "Complete Repeatable Quests",
+                "method_zone": ["Stratholme", "Scholomance"],
+                "method_description": "Once Revered, you may take repeatable quests to get the remainder of the reputation. 'Annals of the Silver Hand' and 'Aberrarions of Bone' has you go into raid/dungeon instances and complete objectives, these can be completed 5 times every hour"
+            }
+        ]
+    },
+    {
+        "name": "Cenarion Circle",
+        "expansion": "Classic",
+        "quartermaster": "Mishta",
+        "quartermaster_location": "Silithus",
+        "image_path": "images/reputations/cenarion_circle.jpg",
+        "faction": "Universal",
+        "faction_type": "World",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [
+            {
+                "reward_name": "Pattern: Cenarion Herb Bag",
+                "reward_type": "Recipe",
+                "required_reputation": "Friendly"
+            },
+            {
+                "reward_name": "Pattern: Sandstalker Bracers",
+                "reward_type": "Recipe",
+                "required_reputation": "Revered"
+            },
+            {
+                "reward_name": "Pattern: Sylvan Shoulders",
+                "reward_type": "Recipe",
+                "required_reputation": "Friendly"
+            },
+            {
+                "reward_name": "Pattern: Bramblewood Belt",
+                "reward_type": "Recipe",
+                "required_reputation": "Friendly"
+            },
+            {
+                "reward_name": "Pattern: Spitfire Bracers",
+                "reward_type": "Recipe",
+                "required_reputation": "Friendly"
+            },
+            {
+                "reward_name": "Plans: Heavy Obsidian Belt",
+                "reward_type": "Recipe",
+                "required_reputation": "Friendly"
+            },
+            {
+                "reward_name": "Plans: Ironvine Belt",
+                "reward_type": "Recipe",
+                "required_reputation": "Friendly"
+            },
+            {
+                "reward_name": "Plans: Ironvine Gloves",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Pattern: Spitfire Gauntlets",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Plans: Light Obsidian Belt",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Pattern: Sandstalker Gauntlets",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Pattern: Bramblewood Boots",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Patters: Sylvan Crown",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Plans: Jagged Obsidian Shield",
+                "reward_type": "Recipe",
+                "required_reputation": "Revered"
+            },
+            {
+                "reward_name": "Pattern: Satchel of Cenarius",
+                "reward_type": "Recipe",
+                "required_reputation": "Revered"
+            },
+            {
+                "reward_name": "Pattern: Spitfire Breastplate",
+                "reward_type": "Recipe",
+                "required_reputation": "Revered"
+            },
+            {
+                "reward_name": "Pattern: Bramblewood Helm",
+                "reward_type": "Recipe",
+                "required_reputation": "Revered"
+            },
+            {
+                "reward_name": "Pattern: Sylvan Vest",
+                "reward_type": "Recipe",
+                "required_reputation": "Revered"
+            },
+            {
+                "reward_name": "Pattern: Sandstalker Breastplate",
+                "reward_type": "Recipe",
+                "required_reputation": "Revered"
+            },
+            {
+                "reward_name": "Pattern: Gaea's Embrace",
+                "reward_type": "Recipe",
+                "required_reputation": "Revered"
+            },
+            {
+                "reward_name": "Plans: Ironvine Breastplate",
+                "reward_type": "Recipe",
+                "required_reputation": "Revered"
+            },
+            {
+                "reward_name": "Plans: Obsidian Mail Tunic",
+                "reward_type": "Recipe",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Pattern: Dreamscale Breastplate",
+                "reward_type": "Recipe",
+                "required_reputation": "Exalted"
+            }
+        ],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Kill Twilight Cultists",
+                "method_zone": ["Silithus"],
+                "method_description": "You may kill Twilight Cultists in the area in order to gain reputation"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Complete Quests",
+                "method_zone": ["Silithus", "Desolace", "Hellfire Citadel", "Un'Goro Citadel", "Western Plaguelands", "Blasted Lands", "Eastern Plaguelands", "Southern Barrens", "Moonglade", "Felwood"],
+                "method_description": "You may run specific quests in these zones to get reputation, for the specific quests, look on wowhead"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Run Raids",
+                "method_zone": ["Ruins of Ahn'Qiraj"],
+                "method_description": "Run through the raids weekly, the bosses will give reputations"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Find/Turn In Items",
+                "method_zone": ["Silithus"],
+                "method_description": "You may acquire 'Encrypted Twilight Text' from either killing Twilight Cultist or buying them from the Auction House"
+            }
+        ]
+    },
+    {
+        "name": "Booty Bay",
+        "expansion": "Classic",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Find/Turn In Items",
+                "method_zone": ["Silithus"],
+                "method_description": "You may acquire 'Encrypted Twilight Text' from either killing Twilight Cultist or buying them from the Auction House"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Kill ",
+                "method_zone": ["Silithus"],
+                "method_description": "You may acquire 'Encrypted Twilight Text' from either killing Twilight Cultist or buying them from the Auction House"
+            }
+        ]
+    },
+    {
+        "name": "Ratchet",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Gadgetzan",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Everlook",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Bloodsail Buccaneers",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Darkmoon Faire",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Thorium Brotherhood",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Brood of Nozdormu",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Hydraxian Waterlords",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Ravenholdt",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Syndicate",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Timbermaw Hold",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Wintersaber Trainers",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Gelkis Clan Centaur",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Magram Clan Centaur",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Guild",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Zandalar Tribe",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Thrallmar",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Honor Hold",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Mag'har",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Kurenai",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Tranquillien",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Cenarion Expedition",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Ogri'la",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Netherwing",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Consortium",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Sporeggar",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Lower City",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Sha'tar",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Shattered Sun Offensive",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Sha'tari Skyguard",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Scryers",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Aldor",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Keepers of Time",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Violet Eye",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Ashtongue Deathsworn",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Scale of the Sands",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Horde Expedition",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Alliance Vanguard",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Warsong Offensive",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Explorers' League",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Taunka",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Frostborn",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Sunreavers",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Silver Covenant",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Hand of Vengeance",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Valiance Expedition",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Frenzyheart Tribe",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Oracles",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Sons of Hodir",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Kalu'ak",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Kirin Tor",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Knights of the Ebon Blade",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Argent Crusade",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Wyrmrest Accord",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Ashen Verdict",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Hellscream's Reach",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Baradin's Wardens",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Dragonmaw Clan",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Wildhammer Clan",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Guardians of Hyjal",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Avengers of Hyjal",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Ramkahen",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "Therazane",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": []
+    },
+    {
+        "name": "The Earthen Ring",
+        "expansion": "",
+        "quartermaster": "",
+        "quartermaster_location": "",
+        "image_path": "",
+        "faction": "",
+        "faction_type": "",
+        "estimated_timegate": "",
+        "ranks": [],
+        "rewards": [],       
         "associated_reputations": [],
         "experience_descriptions": []
     },
@@ -116,391 +2831,8 @@
         "faction": "",
         "faction_type": "",
         "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
         "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
+        "rewards": [],       
         "associated_reputations": [],
         "experience_descriptions": []
     },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "associated_instances": [],
-        "experience_method": [],
-        "ranks": [],
-        "reward_types": [],
-        "rewards": [], 
-        "associated_zones": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-]
