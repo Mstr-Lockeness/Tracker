@@ -1900,199 +1900,460 @@
     {
         "name": "Booty Bay",
         "expansion": "Classic",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "ranks": [],
+        "quartermaster": "None",
+        "quartermaster_location": "None",
+        "image_path": "images/reputations/booty_bay.jpg",
+        "faction": "Universal",
+        "faction_type": "Rival",
+        "estimated_timegate": "2 Months",
+        "ranks": ["Hated", "Hostile", "Unfriendly", "Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [],       
+        "associated_reputations": ["Everlook", "Ratchet", "Gadgetzan"],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Hated",
+                "maximum_reputation": "Neutral",
+                "method_name": "Do Repeatable Quests",
+                "method_zone": ["The Cape of Stranglethorn"],
+                "method_description": "If you manage to get an unfriendly rank or worse, you may complete a repeatable quest indeffinately until you are neutral"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Overflow",
+                "method_zone": ["The Cape of Stranglethorn", "Tanaris", "Northern Barrens"],
+                "method_description": "Killing specified enemies in these zones will award reputation for one specific reputation, and awards 'overflow' reputation to the other 3 factions at a reduced amount. (Note: Reputation rates are reduced after hitting revered)"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Questing",
+                "method_zone": ["The Cape of Stranglethorn", "Tanaris", "Northern Barrens", "Winterspring"],
+                "method_description": "Doing quests in these zone awards reputation for the factions, the main factions zone gets full points and the rest get reduced amount. (Note: Its recommended to do the quests after getting revered, else it becomes harder)"
+            }
+        ]
+    },
+    {
+        "name": "Ratchet",
+        "expansion": "Classic",
+        "quartermaster": "None",
+        "quartermaster_location": "None",
+        "image_path": "images/reputations/ratchet.jpg",
+        "faction": "Universal",
+        "faction_type": "Rival",
+        "estimated_timegate": "2 Months",
+        "ranks": ["Hated", "Hostile", "Unfriendly", "Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [],       
+        "associated_reputations": ["Everlook", "Booty Bay", "Gadgetzan"],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Hated",
+                "maximum_reputation": "Neutral",
+                "method_name": "Do Repeatable Quests",
+                "method_zone": ["Northern Barrens"],
+                "method_description": "If you manage to get an unfriendly rank or worse, you may complete a repeatable quest indeffinately until you are neutral"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Overflow",
+                "method_zone": ["The Cape of Stranglethorn", "Tanaris", "Northern Barrens"],
+                "method_description": "Killing specified enemies in these zones will award reputation for one specific reputation, and awards 'overflow' reputation to the other 3 factions at a reduced amount. (Note: Reputation rates are reduced after hitting revered)"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Questing",
+                "method_zone": ["The Cape of Stranglethorn", "Tanaris", "Northern Barrens", "Winterspring"],
+                "method_description": "Doing quests in these zone awards reputation for the factions, the main factions zone gets full points and the rest get reduced amount. (Note: Its recommended to do the quests after getting revered, else it becomes harder)"
+            }
+        ]
+    },
+    {
+        "name": "Gadgetzan",
+        "expansion": "Classic",
+        "quartermaster": "None",
+        "quartermaster_location": "None",
+        "image_path": "images/reputations/gadgetzan.jpg",
+        "faction": "Universal",
+        "faction_type": "Rival",
+        "estimated_timegate": "2 Months",
+        "ranks": ["Hated", "Hostile", "Unfriendly", "Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [],       
+        "associated_reputations": ["Booty Bay", "Everlook", "Ratchet"],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Hated",
+                "maximum_reputation": "Neutral",
+                "method_name": "Do Repeatable Quests",
+                "method_zone": ["Tanaris"],
+                "method_description": "If you manage to get an unfriendly rank or worse, you may complete a repeatable quest indeffinately until you are neutral"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Overflow",
+                "method_zone": ["The Cape of Stranglethorn", "Tanaris", "Northern Barrens"],
+                "method_description": "Killing specified enemies in these zones will award reputation for one specific reputation, and awards 'overflow' reputation to the other 3 factions at a reduced amount. (Note: Reputation rates are reduced after hitting revered)"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Questing",
+                "method_zone": ["The Cape of Stranglethorn", "Tanaris", "Northern Barrens", "Winterspring"],
+                "method_description": "Doing quests in these zone awards reputation for the factions, the main factions zone gets full points and the rest get reduced amount. (Note: Its recommended to do the quests after getting revered, else it becomes harder)"
+            }
+        ]
+    },
+    {
+        "name": "Everlook",
+        "expansion": "Classic",
+        "quartermaster": "None",
+        "quartermaster_location": "None",
+        "image_path": "images/reputations/everlook.jpg",
+        "faction": "Universal",
+        "faction_type": "Rival",
+        "estimated_timegate": "2 Months",
+        "ranks": ["Hated", "Hostile", "Unfriendly", "Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [],       
+        "associated_reputations": ["Booty Bay", "Ratchet", "Gadgetzan"],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Hated",
+                "maximum_reputation": "Neutral",
+                "method_name": "Do Repeatable Quests",
+                "method_zone": ["Winterspring"],
+                "method_description": "If you manage to get an unfriendly rank or worse, you may complete a repeatable quest indeffinately until you are neutral"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Overflow",
+                "method_zone": ["The Cape of Stranglethorn", "Tanaris", "Northern Barrens"],
+                "method_description": "Killing specified enemies in these zones will award reputation for one specific reputation, and awards 'overflow' reputation to the other 3 factions at a reduced amount. (Note: Reputation rates are reduced after hitting revered)"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Questing",
+                "method_zone": ["The Cape of Stranglethorn", "Tanaris", "Northern Barrens", "Winterspring"],
+                "method_description": "Doing quests in these zone awards reputation for the factions, the main factions zone gets full points and the rest get reduced amount. (Note: Its recommended to do the quests after getting revered, else it becomes harder)"
+            }
+        ]
+    },
+    {
+        "name": "Bloodsail Buccaneers",
+        "expansion": "Classic",
+        "quartermaster": "None",
+        "quartermaster_location": "None",
+        "image_path": "images/reputations/bloodsail_buccaneers.jpg",
+        "faction": "Universal",
+        "faction_type": "Rival",
+        "estimated_timegate": "2 Months",
+        "ranks": ["Hated", "Hostile", "Unfriendly", "Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [],       
+        "associated_reputations": [],
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Hated",
+                "maximum_reputation": "Exalted",
+                "method_name": "Overflow",
+                "method_zone": ["The Cape of Stranglethorn"],
+                "method_description": "Killing specified enemies in these zones will award reputation for one specific reputation, and awards 'overflow' reputation to the other 3 factions at a reduced amount. (Note: Reputation rates are reduced after hitting revered)"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Questing",
+                "method_zone": ["The Cape of Stranglethorn"],
+                "method_description": "Doing quests in these zone awards reputation for the factions, the main factions zone gets full points and the rest get reduced amount. (Note: Its recommended to do the quests after getting revered, else it becomes harder)"
+            }
+        ]
+    },
+    {
+        "name": "Darkmoon Faire",
+        "expansion": "Classic",
+        "quartermaster": "None",
+        "quartermaster_location": "None",
+        "image_path": "images/reputations/darkmoon_faire.jpg",
+        "faction": "Universal",
+        "faction_type": "Event",
+        "estimated_timegate": "3 Months",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
         "rewards": [],       
         "associated_reputations": [],
         "experience_descriptions": [
             {
                 "minimum_reputation": "Neutral",
                 "maximum_reputation": "Exalted",
-                "method_name": "Find/Turn In Items",
-                "method_zone": ["Silithus"],
-                "method_description": "You may acquire 'Encrypted Twilight Text' from either killing Twilight Cultist or buying them from the Auction House"
-            },
-            {
-                "minimum_reputation": "Neutral",
-                "maximum_reputation": "Exalted",
-                "method_name": "Kill ",
-                "method_zone": ["Silithus"],
-                "method_description": "You may acquire 'Encrypted Twilight Text' from either killing Twilight Cultist or buying them from the Auction House"
+                "method_name": "Daily Quests",
+                "method_zone": ["Darkmoon Island"],
+                "method_description": "On the first sunday of the month, the Darkmoon Faire opens for a week. In this week you may do dailies that are no more than mini games, doing all dailies will reward 14k rep for this faction."
             }
         ]
     },
     {
-        "name": "Ratchet",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "ranks": [],
-        "rewards": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "Gadgetzan",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "ranks": [],
-        "rewards": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "Everlook",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "ranks": [],
-        "rewards": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "Bloodsail Buccaneers",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "ranks": [],
-        "rewards": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
-        "name": "Darkmoon Faire",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "ranks": [],
-        "rewards": [],       
-        "associated_reputations": [],
-        "experience_descriptions": []
-    },
-    {
         "name": "Thorium Brotherhood",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "ranks": [],
-        "rewards": [],       
+        "expansion": "Classic",
+        "quartermaster": "Lokhtos Darkbargainer",
+        "quartermaster_location": "Blackrock Depths",
+        "image_path": "images/reputations/thorium_brotherhood.jpg",
+        "faction": "Universal",
+        "faction_type": "Raid",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [
+            {
+                "reward_name": "Pattern: Transmute Elemental Fire",
+                "reward_type": "Recipe",
+                "required_reputation": "Friendly"
+            }
+        ],       
         "associated_reputations": [],
-        "experience_descriptions": []
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Find/Turn In Items",
+                "method_zone": ["Black Rock Depths"],
+                "method_description": "Find/Buy 20-22 Fiery Core/Lava Core and turn them into Lokhtos Darkbargainer for a boost to exalted."
+            }
+        ]
     },
     {
         "name": "Brood of Nozdormu",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "ranks": [],
+        "expansion": "Classic",
+        "quartermaster": "None",
+        "quartermaster_location": "None",
+        "image_path": "images/reputations/brood_of_nozdormu.jpg",
+        "faction": "Universal",
+        "faction_type": "Raid",
+        "estimated_timegate": "2 Months",
+        "ranks": ["Hated", "Hostile", "Unfriendly", "Neutral", "Friendly", "Honored", "Revered", "Exalted"],
         "rewards": [],       
         "associated_reputations": [],
-        "experience_descriptions": []
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Hated",
+                "maximum_reputation": "Honored",
+                "method_name": "Kill Enemies",
+                "method_zone": ["Temple of Ahn'Qiraj"],
+                "method_description": "Kill any enemies inside the Temple of Ahn'Qiraj, any basic enemy or boss will reward reputation up to a point until your Honored."
+            },
+            {
+                "minimum_reputation": "Friendly",
+                "maximum_reputation": "Exalted",
+                "method_name": "Do quests",
+                "method_zone": ["Temple of Ahn'Qiraj"],
+                "method_description": "Inside the Temple of Ahn'Qiraj, 3 dragons sit near the entrance after the first boss, each gives quests that, once completed, will reward reputation. It is recommended to save insignias for some of these quests until you get to Honored, when trash stops giving reputation."
+            },
+            {
+                "minimum_reputation": "Hated",
+                "maximum_reputation": "Exalted",
+                "method_name": "Kill Bosses",
+                "method_zone": ["Black Rock Depths"],
+                "method_description": "Every boss you kill rewards a small/medium amount of reputation for this faction."
+            }
+        ]
     },
     {
         "name": "Hydraxian Waterlords",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "ranks": [],
+        "expansion": "Classic",
+        "quartermaster": "None",
+        "quartermaster_location": "None",
+        "image_path": "images/reputations/hydraxian_waterlords.jpg",
+        "faction": "Universal",
+        "faction_type": "Raid",
+        "estimated_timegate": "6 Months",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
         "rewards": [],       
         "associated_reputations": [],
-        "experience_descriptions": []
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Hated",
+                "maximum_reputation": "Honored",
+                "method_name": "Kill Enemies",
+                "method_zone": ["Molten Core"],
+                "method_description": "Kill any enemies inside the Temple of Ahn'Qiraj, any basic enemy or boss will reward reputation up to a point until your Honored."
+            },
+            {
+                "minimum_reputation": "Hated",
+                "maximum_reputation": "Exalted",
+                "method_name": "Kill Bosses",
+                "method_zone": ["Molten Core"],
+                "method_description": "Every boss you kill rewards a small/medium amount of reputation for this faction."
+            }
+        ]
     },
     {
         "name": "Ravenholdt",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "ranks": [],
+        "expansion": "Classic",
+        "quartermaster": "None",
+        "quartermaster_location": "None",
+        "image_path": "images/reputations/ravenholdt.jpg",
+        "faction": "Universal",
+        "faction_type": "Rival",
+        "estimated_timegate": "None",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
         "rewards": [],       
         "associated_reputations": [],
-        "experience_descriptions": []
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Friendly",
+                "method_name": "Kill Enemies",
+                "method_zone": ["Blackrock Spire"],
+                "method_description": "Kill any enemies affiliated with the sydnicate, any basic enemy will reward reputation up to a point until your Friendly."
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Pickpocket Items",
+                "method_zone": ["Blackrock Spire"],
+                "method_description": "If you have any intention to increase this reputation past friendly, you need to level a rogue and pickpocket enemies to get Heavy Junkboxes, which you then turn in for reputation"
+            }
+        ]
     },
     {
         "name": "Syndicate",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "ranks": [],
+        "expansion": "Classic",
+        "quartermaster": "None",
+        "quartermaster_location": "None",
+        "image_path": "images/reputations/syndicate.jpg",
+        "faction": "Universal",
+        "faction_type": "Rival",
+        "estimated_timegate": "None",
+        "ranks": ["Hated", "Hostile", "Unfriendly", "Neutral"],
         "rewards": [],       
         "associated_reputations": [],
-        "experience_descriptions": []
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Hated",
+                "maximum_reputation": "Neutral",
+                "method_name": "Kill Enemies",
+                "method_zone": ["Blackrock Spire"],
+                "method_description": "Kill any enemies affiliated with Ravenholdt, any basic enemy will reward reputation up to a point until your Neutral."
+            }
+        ]
     },
     {
         "name": "Timbermaw Hold",
-        "expansion": "",
-        "quartermaster": "",
-        "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
+        "expansion": "Classic",
+        "quartermaster": "Meilosh",
+        "quartermaster_location": "Felwood",
+        "image_path": "images/reputations/timbermaw_hold.jpg",
+        "faction": "Universal",
         "faction_type": "",
         "estimated_timegate": "",
-        "ranks": [],
-        "rewards": [],       
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
+        "rewards": [
+            {
+                "reward_name": "Stave of Fur and Claw",
+                "reward_type": "Toy",
+                "required_reputation": "Exalted"
+            },
+            {
+                "reward_name": "Pattern: Warbear Harness",
+                "reward_type": "Recipe",
+                "required_reputation": "Friendly"
+            },
+            {
+                "reward_name": "Pattern: Warbear Woolies",
+                "reward_type": "Recipe",
+                "required_reputation": "Friendly"
+            },
+            {
+                "reward_name": "Recipe: Transmute Earth to Water",
+                "reward_type": "Recipe",
+                "required_reputation": "Friendly"
+            },
+            {
+                "reward_name": "Formula: Enchant 2H Weapon - Agility",
+                "reward_type": "Recipe",
+                "required_reputation": "Friendly"
+            },
+            {
+                "reward_name": "Formula: Enchant Weapon - Agility",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Pattern: Might of the Timbermaw",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Plans: Heavy Timbermaw Belt",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Pattern: Wisdom of the Timbermaw",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Pattern: Mantle of the Timbermaw",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Plans: Heavy Timbermaw Boots",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            },
+            {
+                "reward_name": "Pattern: Timbermaw Brawlers",
+                "reward_type": "Recipe",
+                "required_reputation": "Honored"
+            }
+        ],       
         "associated_reputations": [],
-        "experience_descriptions": []
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Kill Enemies",
+                "method_zone": ["Winterspring", "Felwood"],
+                "method_description": "Killing specified enemies in these zones will award reputation for this faction."
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Do Quests",
+                "method_zone": ["Winterspring", "Felwood"],
+                "method_description": "Do specific quests in these zones to get reputation for your factions"
+            },
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Do Repeatable Quests",
+                "method_zone": ["Winterspring", "Felwood"],
+                "method_description": "Doing turn in quests for this faction gives a large chunk of reputation. There are 4 different quests, 2 in each zone that rewards 2k reputation each"
+            }
+        ]
     },
     {
         "name": "Wintersaber Trainers",
-        "expansion": "",
+        "expansion": "Classic",
         "quartermaster": "",
         "quartermaster_location": "",
-        "image_path": "",
-        "faction": "",
-        "faction_type": "",
-        "estimated_timegate": "",
-        "ranks": [],
+        "image_path": "images/reputations/wintersaber_trainers.jpg",
+        "faction": "Alliance",
+        "faction_type": "Special",
+        "estimated_timegate": "20 Days",
+        "ranks": ["Neutral", "Friendly", "Honored", "Revered", "Exalted"],
         "rewards": [],       
         "associated_reputations": [],
-        "experience_descriptions": []
+        "experience_descriptions": [
+            {
+                "minimum_reputation": "Neutral",
+                "maximum_reputation": "Exalted",
+                "method_name": "Do Repeatable Quests",
+                "method_zone": ["Winterspring"],
+                "method_description": "Doing repeatable quests for this faction gives a chunk of reputation each, complete for 20 days and youll have exalted, the toy, and the mount."
+            }
+        ]
     },
     {
         "name": "Gelkis Clan Centaur",
@@ -2836,3 +3097,4 @@
         "associated_reputations": [],
         "experience_descriptions": []
     },
+]
