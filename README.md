@@ -1,0 +1,1 @@
+This is a small self made program that i will be making for my wife and I. It will mainly be used for mount/reputation tracking, might add outfit collections at a later point.
