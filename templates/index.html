@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wow Mount Tracker</title>
+</head>
+<body>
+    <h1>My Mount Collection</h1>
+    <a href="/dashboard">
+        <button type="button">View Dashboard</button>
+    </a>    
+
+    <a href="/cycle_view">
+        <button type="button">Cycle View Mode</button>
+    </a>
+
+    <hr>
+
+    <ul>
+        {% for mount in mount_data %}
+            <li>
+                <strong>{{ mount.name }}</strong>
+                <em>{{ mount.source_type }}</em>
+                {% if mount.obtained %}
+                    (✅ Collected)
+                {% else %}
+                    (❌ Still Hunting)
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

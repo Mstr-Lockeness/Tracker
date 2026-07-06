@@ -8,7 +8,7 @@ def filter_mounts_by_expansion(expansion):
             if mount["expansion"] == expansion:
                 filtered_list.append(mount)
                 print(f"Mount: {mount['name']} | Drops from: {mount['dropped_from']}")
-    #return filtered_list
+    return filtered_list
 
 def filter_mounts_by_type(mount_type):
     filtered_list = []
@@ -18,7 +18,7 @@ def filter_mounts_by_type(mount_type):
             if mount["mount_type"] == mount_type:
                 filtered_list.append(mount)
                 print(f"Mount: {mount['name']} | Drops from: {mount['dropped_from']}")
-    #return filtered_list
+    return filtered_list
 
 def filter_rep_by_expansion(expansion):
     filtered_list = []
@@ -28,7 +28,7 @@ def filter_rep_by_expansion(expansion):
             if rep["expansion"] == expansion:
                 filtered_list.append(rep)
                 print(f"Name: {rep['name']} | Faction: {rep['faction']}")
-    #return filtered_list
+    return filtered_list
 
 def mark_mount_as_obtained(mount_name):
     with open("mounts.json", "r") as f:
@@ -75,10 +75,6 @@ def decrease_rank_of_reputation(reputation):
     with open("reputation.json", "w") as f:
         json.dump(reps, f, indent=4)
 
-#def sort_by_alliance():
-
-#def sort_by_horde():
-
 def show_requested_mounts():
     with open("settings.json", "r") as f:
         values = json.load(f)
@@ -87,7 +83,7 @@ def show_requested_mounts():
         mounts = json.load(f)
     filtered_list = []
     view += 1
-    if view == 5:
+    if view == 7:
         view = 0
     for mount in mounts:
         if view == 1: #default, shows both owned and unowned (if obtainable)
@@ -102,22 +98,47 @@ def show_requested_mounts():
         elif view == 4: #only shows favorites
             if mount["favorite"] == True:
                 filtered_list.append(mount)
+        elif view == 5: #only shows mounts available to Alliance
+            if mount["faction"] == "Alliance" or mount["faction"] == "Universal":
+                filtered_list.append(mount)
+        elif view == 6: #only shows mounts available to Horde
+            if mount["faction"] == "Horde" or mount["faction"] == "Universal":
+                filtered_list.append(mount)
         else: # #only shows unobtainable mounts
             if mount["still_obtainable"] == False:
                 filtered_list.append(mount)
     values["view"] = view
+    for mount in filtered_list:
+        print(f"Mount: {mount['name']} | Drops from: {mount['dropped_from']}")
     with open("settings.json", "w") as f:
         json.dump(values, f, indent=4)
     return filtered_list
     
+def filter_mounts_by_source(source_type):
+    filtered_list = []
+    with open("mounts.json", "r") as f:
+        mounts = json.load(f)
+    for mount in mounts:
+        if mount["source_type"] == source_type:
+            filtered_list.append(mount)
+            print(f"Mount: {mount['name']} | Drops from: {mount['dropped_from']}")
+    return filtered_list
 
+def mark_mount_as_favorite(mount_name):
+    with open("mounts.json", "r") as f:
+        mounts = json.load(f)
+    for mount in mounts:
+        if mount["name"] == mount_name:
+            if mount["favorite"] == True:
+                mount["favorite"] = False
+                print(f"{mount["name"]} has been removed from your favorites.")
+            else:
+                mount["favorite"] = True
+                print(f"{mount["name"]} has been added to your favorites.")
+    with open("mounts.json", "w") as f:
+        json.dump(mounts, f, indent=4) 
 
-#def filter_mounts_by_source(source_type):
-
-#def mark_mount_as_favorite
 
 print("Test 1:")
-increase_rank_of_reputation("Stormwind")
+mark_mount_as_favorite("Invincible")
 
-print("Test 2:")
-decrease_rank_of_reputation("Stormwind")

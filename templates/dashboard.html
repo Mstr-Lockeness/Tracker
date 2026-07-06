@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mount Dashboard</title>
+</head>
+<body>
+    <h1>Collection Dashboard</h1>
+
+    <div class="overall">
+        <h2>Global Progress: {{ overall_stats.percentage }}%</h2>
+        <p>Total Collected: {{ overall_stats.obtained }} / {{ overall_stats.total }}</p>
+    </div>
+
+    <hr>
+
+    <h3>Expansion Progress</h3>
+    <ul>
+        {% for exp_name, counts in expansion_stats.items() %}
+            <li><strong>{{ exp_name }}</strong>: {{ counts.owned }} / {{ counts.total }}</li>
+        {% endfor %}
+    </ul>
+
+    <p><a href="/">Back to Mount List</a></p>
+</body>
+</html>
