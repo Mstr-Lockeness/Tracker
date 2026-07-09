@@ -2,31 +2,97 @@
 <html>
 <head>
     <title>Wow Mount Tracker</title>
+    <style>
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        a:visited {
+            color: inherit;
+        }
+    </style>
 </head>
-<body>
+<body style="background-color: #4d4949;">
     <h1>My Mount Collection</h1>
-    <a href="/dashboard">
-        <button type="button">View Dashboard</button>
-    </a>    
-
-    <a href="/cycle_view">
-        <button type="button">Cycle View Mode</button>
-    </a>
-
+        <a href="/">Stats</a>
     <hr>
+    <input type="text" id="search" placeholder="Search mounts..." onkeyup="filterMounts()">
+    <div style="display: flex;">
+        <aside style="width: 200px; flex-shrink: 0; margin-right: 20px; background-color: #7979793b; padding: 10px;">
+            <h3>Mounts</h3>
 
-    <ul>
-        {% for mount in mount_data %}
-            <li>
-                <strong>{{ mount.name }}</strong>
-                <em>{{ mount.source_type }}</em>
-                {% if mount.obtained %}
-                    (✅ Collected)
-                {% else %}
-                    (❌ Still Hunting)
-                {% endif %}
-            </li>
-        {% endfor %}
-    </ul>
+            <details>
+                <summary>Expansions</summary>
+                <ul>
+                    {% for expansion in expansions %}
+                       <li><a href="/mount_index?expansion={{ expansion }}">{{ expansion }}</a></li>
+                    {% endfor %}
+                </ul>
+            </details>
+            <details>
+                <summary>Models</summary>
+                <ul>
+                    {% for model in mount_types %}
+                       <li><a href="/mount_index?mount_type={{ model }}">{{ model }}</a></li>
+                    {% endfor %}
+                </ul>
+            </details>
+            <details>
+                <summary>Special</summary>
+                <ul>
+                    {% for filter in special_filters %}
+                       <li><a href="/mount_index?special={{ filter }}">{{ filter }}</a></li>
+                    {% endfor %}
+                </ul>
+            </details>
+        </aside>
+        <main>
+            <div id="mount-list" style="display: flex; flex-wrap: wrap; gap: 15px;">
+                {% for mount in mount_data %}
+                    <div class="mount-card" style="background-color: #f0f0f0; border-radius: 10px; padding: 15px; width: 200px;">
+                        <strong>{{ mount.name }}</strong>
+                        <p>{{ mount.expansion }} - {{ mount.mount_type }}</p>
+                        {% if mount.faction and mount.faction != "None" %}
+                            <p>Faction: {{ mount.faction }}</p>
+                        {% endif %}
+                        <p>Source: {{ mount.source_type }}</p>
+                        {% if mount.zone and mount.zone != "None" %}
+                            <p>Zone: {{ mount.zone }}</p>
+                        {% endif %}
+                        {% if mount.instance and mount.instance != "None" %}
+                            <p>Instance: {{ mount.instance }}</p>
+                        {% endif %}
+                        {% if mount.dropped_from and mount.dropped_from != "None" %}
+                            <p>{{ mount.dropped_from }}</p>
+                        {% endif %}
+                        {% if mount.notes and mount.notes != "None" %}
+                            <p><em>{{ mount.notes }}</em></p>
+                        {% endif %}
+                        {% if mount.flavor and mount.flavor != "None" %}
+                            <p><em>{{ mount.flavor }}</em></p>
+                        {% endif %}
+                        {% if mount.obtained %}
+                            <p>✅ Collected</p>
+                        {% else %}
+                            <p>❌ Still Hunting</p>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+                </div>
+            <script>
+                function filterMounts() {
+                const input = document.getElementById("search").value.toLowerCase();
+                const items = document.querySelectorAll("#mount-list li.mount-card");
+                items.forEach(function(item) {
+                    if (item.innerText.toLowerCase().includes(input)) {
+                        item.style.display = "";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            }
+            </script>
+        </main>
+    </div>
 </body>
 </html>
