@@ -51,18 +51,18 @@ def filter_rep_by_expansion(expansion):
                 filtered_list.append(rep)
     return filtered_list
 
-def mark_mount_as_obtained(mount_name):
-    with open("mounts.json", "r") as f:
-        all_mounts = json.load(f)
+def toggle_obtained(all_mounts, mount_name):
     for mount in all_mounts:
+        print(repr(mount["name"]), repr(mount_name))
         if mount["name"] == mount_name:
+            print("looking for:", mount_name, "| matched:", mount["name"])
             if mount["obtained"] == True:
                 mount["obtained"] = False
             else:
                 mount["obtained"] = True
-            break
-    with open("mounts.json", "w") as f:
-        json.dump(all_mounts, f, indent=4)
+            with open("mounts.json", "w") as f:
+                json.dump(all_mounts, f, indent=4)
+    return mount["obtained"]
 
 def increase_rank_of_reputation(reputation):
     with open("reputation.json", "r") as f:
@@ -101,17 +101,16 @@ def filter_mounts_by_source(source_type):
             filtered_list.append(mount)
     return filtered_list
 
-def mark_mount_as_favorite(mount_name):
-    with open("mounts.json", "r") as f:
-        mounts = json.load(f)
-    for mount in mounts:
+def toggle_favorite(all_mounts, mount_name):
+    for mount in all_mounts:
         if mount["name"] == mount_name:
             if mount["favorite"] == True:
                 mount["favorite"] = False
             else:
                 mount["favorite"] = True
-    with open("mounts.json", "w") as f:
-        json.dump(mounts, f, indent=4) 
+            with open("mounts.json", "w") as f:
+                json.dump(all_mounts, f, indent=4)
+    return mount["favorite"]
 
 def get_stats(mounts):
     total = len(mounts)
@@ -152,7 +151,8 @@ def filter_out_unique_models(mounts):
 
 def get_available_mounts(mounts):
     filtered_list = []
-    if mount["still_obtainable"] == True or mount["obtained"] == True:
-        filtered_list.append(mount)
+    for mount in mounts:
+        if mount["still_obtainable"] == True or mount["obtained"] == True:
+            filtered_list.append(mount)
     return filtered_list
     

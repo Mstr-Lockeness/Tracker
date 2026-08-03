@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, request
+from flask import Flask, render_template, redirect, request, jsonify
 import logic
 import json
 
@@ -34,6 +34,19 @@ def dashboard():
     expansions = logic.filter_out_expansions(all_mounts)
     mount_type = logic.filter_out_unique_models(all_mounts)
     return render_template("dashboard.html", overall_stats=overall, expansion_stats=expansions_stats, expansions=expansions, mount_type=mount_type, special_filters=logic.SPECIAL_FILTERS)
+
+@app.route("/toggle_obtained", methods=["POST"])
+def toggle_obtained():
+    mount_name = request.form.get("mount_name")
+    print(mount_name)
+    obtained_status = logic.toggle_obtained(all_mounts, mount_name)
+    return jsonify({"obtained": obtained_status})
+
+@app.route("/toggle_favorite", methods=["POST"])
+def toggle_favorite():
+    mount_name = request.form.get("mount_name")
+    favorite_status = logic.toggle_favorite(all_mounts, mount_name)
+    return jsonify({"favorite": favorite_status})
 
 if __name__ == "__main__":
     app.run(debug=True)

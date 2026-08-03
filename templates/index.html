@@ -17,7 +17,7 @@
         <a href="/">Stats</a>
     <hr>
     <input type="text" id="search" placeholder="Search mounts..." onkeyup="filterMounts()">
-    <div style="display: flex;">
+    <div style="display: flex;;">
         <aside style="width: 200px; flex-shrink: 0; margin-right: 20px; background-color: #7979793b; padding: 10px;">
             <h3>Mounts</h3>
 
@@ -39,7 +39,7 @@
             </details>
             <details>
                 <summary>Special</summary>
-                <ul>
+                <ul>    
                     {% for filter in special_filters %}
                        <li><a href="/mount_index?special={{ filter }}">{{ filter }}</a></li>
                     {% endfor %}
@@ -47,42 +47,54 @@
             </details>
         </aside>
         <main>
-            <div id="mount-list" style="display: flex; flex-wrap: wrap; gap: 15px;">
+            <div id="mount-list" style="display: flex; flex-wrap: wrap; gap: 15px; flex-direction: column;">
                 {% for mount in mount_data %}
-                    <div class="mount-card" style="background-color: #f0f0f0; border-radius: 10px; padding: 15px; width: 200px;">
-                        <strong>{{ mount.name }}</strong>
-                        <p>{{ mount.expansion }} - {{ mount.mount_type }}</p>
-                        {% if mount.faction and mount.faction != "None" %}
-                            <p>Faction: {{ mount.faction }}</p>
-                        {% endif %}
-                        <p>Source: {{ mount.source_type }}</p>
-                        {% if mount.zone and mount.zone != "None" %}
-                            <p>Zone: {{ mount.zone }}</p>
-                        {% endif %}
-                        {% if mount.instance and mount.instance != "None" %}
-                            <p>Instance: {{ mount.instance }}</p>
-                        {% endif %}
-                        {% if mount.dropped_from and mount.dropped_from != "None" %}
-                            <p>{{ mount.dropped_from }}</p>
-                        {% endif %}
-                        {% if mount.notes and mount.notes != "None" %}
-                            <p><em>{{ mount.notes }}</em></p>
-                        {% endif %}
-                        {% if mount.flavor and mount.flavor != "None" %}
-                            <p><em>{{ mount.flavor }}</em></p>
-                        {% endif %}
-                        {% if mount.obtained %}
-                            <p>✅ Collected</p>
-                        {% else %}
-                            <p>❌ Still Hunting</p>
-                        {% endif %}
+                    <div class="mount-card" style="background-color: {% if mount.obtained %}#c6f5c6{% else %}#f5c6d6{% endif %}; border-radius: 10px; padding: 15px; width: 95%; display: flex; gap: 15px;">
+                        <div style="width: 250px;">
+                            <img src="{{ url_for('static', filename=mount.image_path) }}" style="width: 100%; border-radius: 8px;">
+                            <form method="POST" action="/toggle_obtained">
+                                <input type="hidden" name="mount_name" value="{{ mount.name }}">
+                                <input type="checkbox" onchange="handleToggle(this)" 
+                                    {% if mount.obtained %}checked{% endif %}>
+                                Obtained
+                            </form>
+                            <form method="POST" action="/toggle_favorite">
+                                <input type="hidden" name="mount_name" value="{{ mount.name }}">
+                                <input type="checkbox" onchange="handleToggle(this)" 
+                                    {% if mount.favorite %}checked{% endif %}>
+                                Favorite
+                            </form>
+                        </div>
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                            <strong>{{ mount.name }}</strong>
+                            <p>{{ mount.expansion }} - {{ mount.mount_type }}</p>
+                            {% if mount.faction and mount.faction != "None" %}
+                                <p>Faction: {{ mount.faction }}</p>
+                            {% endif %}
+                            <p>Source: {{ mount.source_type }}</p>
+                            {% if mount.zone and mount.zone != "None" %}
+                                <p>Zone: {{ mount.zone }}</p>
+                            {% endif %}
+                            {% if mount.instance and mount.instance != "None" %}
+                                <p>Instance: {{ mount.instance }}</p>
+                            {% endif %}
+                            {% if mount.dropped_from and mount.dropped_from != "None" %}
+                                <p>{{ mount.dropped_from }}</p>
+                            {% endif %}
+                            {% if mount.notes and mount.notes != "None" %}
+                                <p>{{ mount.notes }}</p>
+                            {% endif %}
+                            {% if mount.flavor and mount.flavor != "None" %}
+                                <p><em>{{ mount.flavor }}</em></p>
+                            {% endif %}
+                        </div>
                     </div>
                 {% endfor %}
                 </div>
             <script>
                 function filterMounts() {
                 const input = document.getElementById("search").value.toLowerCase();
-                const items = document.querySelectorAll("#mount-list li.mount-card");
+                const items = document.querySelectorAll("#mount-list div.mount-card");
                 items.forEach(function(item) {
                     if (item.innerText.toLowerCase().includes(input)) {
                         item.style.display = "";
@@ -94,5 +106,6 @@
             </script>
         </main>
     </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

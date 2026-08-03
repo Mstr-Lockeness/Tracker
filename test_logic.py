@@ -1,23 +1,59 @@
 import json
+{
+        "name":"",
+        "expansion": "",
+        "mount_type": "",
+        "faction": "Universal",
+        "source_type": "",
+        "zone": "None",
+        "instance": "None",
+        "dropped_from": "",
+        "obtained": false, 
+        "still_obtainable": true,
+        "favorite": false,
+        "flavor": "",
+        "image_path": "images//.jpg",
+        "notes": ""
+    },
 
-def filter_mounts_by_expansion(expansion):
+    def show_special_filters(mounts, special):
     filtered_list = []
-    with open("mounts.json", "r") as f:
-        all_mounts = json.load(f)
-        for mount in all_mounts:
-            if mount["expansion"] == expansion:
+    for mount in mounts:
+        if special == "Obtained": 
+            if mount["obtained"] == True:
                 filtered_list.append(mount)
-                print(f"Mount: {mount['name']} | Drops from: {mount['dropped_from']}")
+        elif special == "Unobtained": 
+            if mount["obtained"] == False:
+                filtered_list.append(mount)
+        elif special == "Favorites": 
+            if mount["favorite"] == True:
+                filtered_list.append(mount)
+        elif special == "Alliance":
+            if mount["faction"] == "Alliance" or mount["faction"] == "Universal":
+                filtered_list.append(mount)
+        elif special == "Horde":
+            if mount["faction"] == "Horde" or mount["faction"] == "Universal":
+                filtered_list.append(mount)
+        elif special == "Unobtainable":
+            if mount["still_obtainable"] == False:
+                filtered_list.append(mount)
+        else:  #All Obtainable
+            if mount["still_obtainable"] == True or mount["obtained"] == True:
+                filtered_list.append(mount)
     return filtered_list
 
-def filter_mounts_by_type(mount_type):
+def filter_mounts_by_type(all_mounts, mount_type):
     filtered_list = []
-    with open("mounts.json", "r") as f:
-        all_mounts = json.load(f)
-        for mount in all_mounts:
-            if mount["mount_type"] == mount_type:
-                filtered_list.append(mount)
-                print(f"Mount: {mount['name']} | Drops from: {mount['dropped_from']}")
+    for mount in all_mounts:
+        if mount["mount_type"] == mount_type:
+            filtered_list.append(mount)
+    return filtered_list
+
+def filter_mounts_by_expansion(all_mounts, expansion):
+    filtered_list = []
+    for mount in all_mounts:
+        if mount["expansion"] == expansion:
+            filtered_list.append(mount)
     return filtered_list
 
 def filter_rep_by_expansion(expansion):
@@ -27,22 +63,19 @@ def filter_rep_by_expansion(expansion):
         for rep in all_reputation:
             if rep["expansion"] == expansion:
                 filtered_list.append(rep)
-                print(f"Name: {rep['name']} | Faction: {rep['faction']}")
     return filtered_list
 
-def mark_mount_as_obtained(mount_name):
-    with open("mounts.json", "r") as f:
-        all_mounts = json.load(f)
+def toggle_obtained(all_mounts, mount_name):
     for mount in all_mounts:
         if mount["name"] == mount_name:
+            print("looking for:", mount_name, "| matched:", mount["name"])
             if mount["obtained"] == True:
                 mount["obtained"] = False
             else:
                 mount["obtained"] = True
-            print(f"{mount['name']} marked as {mount['obtained']}")
-            break
-    with open("mounts.json", "w") as f:
-        json.dump(all_mounts, f, indent=4)
+        with open("mounts.json", "w") as f:
+            json.dump(all_mounts, f, indent=4)
+        return mount["obtained"]
 
 def increase_rank_of_reputation(reputation):
     with open("reputation.json", "r") as f:
@@ -54,11 +87,9 @@ def increase_rank_of_reputation(reputation):
             current_index = ranks.index(current)
             if current_index < len(ranks) -1:
                 rep["current_rank"] = ranks[current_index + 1]
-                print(f"Leveled up {reputation} to {rep['current_rank']}!")
             break
     with open("reputation.json", "w") as f:
         json.dump(reps, f, indent=4)
-
 
 def decrease_rank_of_reputation(reputation):
     with open("reputation.json", "r") as f:
@@ -70,50 +101,10 @@ def decrease_rank_of_reputation(reputation):
             current_index = ranks.index(current)
             if current_index > 0:
                 rep["current_rank"] = ranks[current_index - 1]
-                print(f"Whoops! We fixed {reputation} back to {rep['current_rank']}!")
             break
     with open("reputation.json", "w") as f:
         json.dump(reps, f, indent=4)
 
-def show_requested_mounts():
-    with open("settings.json", "r") as f:
-        values = json.load(f)
-        view = values["view"]
-    with open("mounts.json", "r") as f:
-        mounts = json.load(f)
-    filtered_list = []
-    view += 1
-    if view == 7:
-        view = 0
-    for mount in mounts:
-        if view == 1: #default, shows both owned and unowned (if obtainable)
-            if mount["still_obtainable"] == True or mount["obtained"] == True:
-                filtered_list.append(mount)
-        elif view == 2: #only shows owned
-            if mount["obtained"] == True:
-                filtered_list.append(mount)
-        elif view == 3: #only shows unowned
-            if mount["obtained"] == False and mount["still_obtainable"] == True:
-                filtered_list.append(mount)
-        elif view == 4: #only shows favorites
-            if mount["favorite"] == True:
-                filtered_list.append(mount)
-        elif view == 5: #only shows mounts available to Alliance
-            if mount["faction"] == "Alliance" or mount["faction"] == "Universal":
-                filtered_list.append(mount)
-        elif view == 6: #only shows mounts available to Horde
-            if mount["faction"] == "Horde" or mount["faction"] == "Universal":
-                filtered_list.append(mount)
-        else: # #only shows unobtainable mounts
-            if mount["still_obtainable"] == False:
-                filtered_list.append(mount)
-    values["view"] = view
-    for mount in filtered_list:
-        print(f"Mount: {mount['name']} | Drops from: {mount['dropped_from']}")
-    with open("settings.json", "w") as f:
-        json.dump(values, f, indent=4)
-    return filtered_list
-    
 def filter_mounts_by_source(source_type):
     filtered_list = []
     with open("mounts.json", "r") as f:
@@ -121,24 +112,60 @@ def filter_mounts_by_source(source_type):
     for mount in mounts:
         if mount["source_type"] == source_type:
             filtered_list.append(mount)
-            print(f"Mount: {mount['name']} | Drops from: {mount['dropped_from']}")
     return filtered_list
 
-def mark_mount_as_favorite(mount_name):
-    with open("mounts.json", "r") as f:
-        mounts = json.load(f)
-    for mount in mounts:
+def toggle_favorite(all_mounts, mount_name):
+    for mount in all_mounts:
         if mount["name"] == mount_name:
             if mount["favorite"] == True:
                 mount["favorite"] = False
-                print(f"{mount["name"]} has been removed from your favorites.")
             else:
                 mount["favorite"] = True
-                print(f"{mount["name"]} has been added to your favorites.")
-    with open("mounts.json", "w") as f:
-        json.dump(mounts, f, indent=4) 
+        with open("mounts.json", "w") as f:
+            json.dump(all_mounts, f, indent=4)
+        return mount["favorite"]
 
+def get_stats(mounts):
+    total = len(mounts)
+    obtained = len([m for m in mounts if m["obtained"]])
+    return{
+        "total": total,
+        "obtained": obtained,
+        "percentage": round((obtained / total) * 100, 2) if total > 0 else 0
+    }
 
-print("Test 1:")
-mark_mount_as_favorite("Invincible")
+def get_expansion_stats(mounts):
+    stats = {}
+    for mount in mounts:
+        if not mount.get("expansion"):
+            continue
+        exp = mount["expansion"]
+        if exp not in stats:
+            stats[exp] = {"owned": 0, "total": 0}
+        stats[exp]["total"] += 1
+        if mount["obtained"]:
+            stats[exp]["owned"] += 1
+    return stats
 
+def filter_out_expansions(mounts):
+    filtered_list = []
+    for mount in mounts:
+        if mount["expansion"] not in filtered_list:
+            filtered_list.append(mount["expansion"])
+    return filtered_list
+
+def filter_out_unique_models(mounts):
+    filtered_list = []
+    for mount in mounts:
+        if mount["mount_type"] not in filtered_list:
+            filtered_list.append(mount["mount_type"])
+            filtered_list.sort()
+    return filtered_list
+
+def get_available_mounts(mounts):
+    filtered_list = []
+    for mount in mounts:
+        if mount["still_obtainable"] == True or mount["obtained"] == True:
+            filtered_list.append(mount)
+    return filtered_list
+    
