@@ -1,0 +1,11 @@
+Overall pages:
+    Interactable navigation buttons for existing pages
+    More pages/expanded features
+    Interactable Dropdown Menus + Buttons for filters on sidebar
+    Aesthetic Design
+
+Stats:
+    Minimized Favorites Info Panel
+
+Index:
+    Do Cross-Faction Mount Unlocks

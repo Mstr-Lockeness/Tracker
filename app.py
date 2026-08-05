@@ -33,18 +33,20 @@ def dashboard():
     expansions_stats = logic.get_expansion_stats(all_mounts)
     expansions = logic.filter_out_expansions(all_mounts)
     mount_type = logic.filter_out_unique_models(all_mounts)
-    return render_template("dashboard.html", overall_stats=overall, expansion_stats=expansions_stats, expansions=expansions, mount_type=mount_type, special_filters=logic.SPECIAL_FILTERS)
+    favorites = logic.filter_out_favorites(all_mounts)
+    return render_template("dashboard.html", overall_stats=overall, expansion_stats=expansions_stats, expansions=expansions, mount_type=mount_type, special_filters=logic.SPECIAL_FILTERS, favorites=favorites)
 
 @app.route("/toggle_obtained", methods=["POST"])
 def toggle_obtained():
-    mount_name = request.form.get("mount_name")
-    print(mount_name)
+    mount = request.get_json()
+    mount_name = mount["mount_name"]
     obtained_status = logic.toggle_obtained(all_mounts, mount_name)
     return jsonify({"obtained": obtained_status})
 
 @app.route("/toggle_favorite", methods=["POST"])
 def toggle_favorite():
-    mount_name = request.form.get("mount_name")
+    mount = request.get_json()
+    mount_name = mount["mount_name"]
     favorite_status = logic.toggle_favorite(all_mounts, mount_name)
     return jsonify({"favorite": favorite_status})
 

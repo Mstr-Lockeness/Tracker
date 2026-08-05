@@ -62,7 +62,7 @@ def toggle_obtained(all_mounts, mount_name):
                 mount["obtained"] = True
             with open("mounts.json", "w") as f:
                 json.dump(all_mounts, f, indent=4)
-    return mount["obtained"]
+            return mount["obtained"]
 
 def increase_rank_of_reputation(reputation):
     with open("reputation.json", "r") as f:
@@ -110,7 +110,7 @@ def toggle_favorite(all_mounts, mount_name):
                 mount["favorite"] = True
             with open("mounts.json", "w") as f:
                 json.dump(all_mounts, f, indent=4)
-    return mount["favorite"]
+            return mount["favorite"]
 
 def get_stats(mounts):
     total = len(mounts)
@@ -153,6 +153,13 @@ def get_available_mounts(mounts):
     filtered_list = []
     for mount in mounts:
         if mount["still_obtainable"] == True or mount["obtained"] == True:
+            filtered_list.append(mount)
+    return filtered_list
+
+def filter_out_favorites(mounts):
+    filtered_list = []
+    for mount in mounts:
+        if mount["favorite"] == True:
             filtered_list.append(mount)
     return filtered_list
     

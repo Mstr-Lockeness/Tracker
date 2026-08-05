@@ -40,7 +40,7 @@
         "zone": "Durotar",
         "instance": "None",
         "dropped_from": "Vendor: Zjolnir",
-        "obtained": true,
+        "obtained": false,
         "still_obtainable": true,
         "favorite": false,
         "flavor": "'Bred from the fiercest stock anywhere and guaranteed not to bite (much).'",
